@@ -25,12 +25,21 @@ npm run lint
 
 Para actualizar el CV basta con sustituir `public/cv-paloma-guiral.pdf` por la nueva versión (mismo nombre).
 
-## Despliegue en Vercel
+## Despliegue en Render
 
-1. Entra en [vercel.com](https://vercel.com) con tu cuenta de GitHub.
-2. **Add New… → Project**, elige el repositorio `palomaguiral/portfolio` y pulsa **Import**.
-3. Vercel detecta Next.js solo: deja la configuración por defecto y pulsa **Deploy**.
-4. (Opcional) Si usas un dominio propio, añádelo en **Settings → Domains** y crea la variable de entorno
-   `NEXT_PUBLIC_SITE_URL=https://tu-dominio.com` en **Settings → Environment Variables** (así el sitemap, el canonical y Open Graph usan ese dominio). Sin ella se usa automáticamente la URL de producción de Vercel.
+La web se despliega como **Web Service** de Node (hace falta servidor por la redirección de idioma de `src/proxy.ts`).
+El archivo `render.yaml` ya trae la configuración.
+
+1. En [dashboard.render.com](https://dashboard.render.com): **New → Web Service** y elige el repositorio `palomaguiral/portfolio`.
+2. Configuración:
+   - **Runtime:** Node
+   - **Build Command:** `npm ci && npm run build`
+   - **Start Command:** `npm run start`
+   - **Environment Variables:** `NODE_VERSION=22`
+3. Pulsa **Deploy Web Service**.
+4. (Opcional) Con dominio propio, añádelo en **Settings → Custom Domains** y crea la variable
+   `NEXT_PUBLIC_SITE_URL=https://tu-dominio.com` (así el sitemap, el canonical y Open Graph usan ese dominio).
+   Sin ella se usa automáticamente la URL `*.onrender.com` (`RENDER_EXTERNAL_URL`).
 
 Cada `git push` a `main` vuelve a desplegar la web automáticamente.
+En el plan gratuito, el servicio se duerme tras unos 15 minutos sin visitas y la primera visita después tarda en cargar.

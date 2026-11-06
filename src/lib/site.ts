@@ -1,7 +1,10 @@
 import type { Locale } from "./i18n";
 
+// Public URL used for canonical links, hreflang, Open Graph and the sitemap.
+// Set NEXT_PUBLIC_SITE_URL for a custom domain; otherwise Render's own URL is used.
 export const siteUrl = (
   process.env.NEXT_PUBLIC_SITE_URL ??
+  process.env.RENDER_EXTERNAL_URL ??
   (process.env.VERCEL_PROJECT_PRODUCTION_URL
     ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
     : "http://localhost:3000")

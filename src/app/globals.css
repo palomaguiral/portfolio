@@ -1,26 +1,139 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@theme {
+  --color-outer: #5a0a0e;
+  --color-panel: #8e1219;
+  --color-tab: #74101a;
+  --color-deep: #6b0c12;
+  --color-folder: #4a070b;
+  --color-cream: #f4e7d7;
+  --color-paper: #fbf5ec;
+  --color-ink: #3e070a;
+  --color-ink-soft: #5e3a35;
+  --color-muted: #7a4a45;
+  --color-tabtext: #e9cfc6;
+  --color-rose: #e9b9ae;
+  --color-line: #dcc3b8;
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
+  --font-sans: var(--font-inter-tight), system-ui, sans-serif;
+  --font-serif: var(--font-bodoni), Georgia, serif;
+  --font-hand: var(--font-caveat), cursive;
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  --ease-soft: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  --animate-rise: rise 0.55s var(--ease-soft) both;
+  --animate-rise-sm: rise-sm 0.45s var(--ease-soft) both;
+  --animate-slide-x: slide-x 0.45s var(--ease-soft) both;
+  --animate-why: why 0.45s var(--ease-soft) both;
+  --animate-pop: pop 0.55s var(--ease-soft) both;
+  --animate-fade: fade 0.3s ease both;
+  --animate-swing: swing 6s ease-in-out infinite;
+  --animate-bar: bar 60s linear 0.6s both;
+
+  @keyframes rise {
+    from { opacity: 0; transform: translateY(22px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes rise-sm {
+    from { opacity: 0; transform: translateY(16px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes slide-x {
+    from { opacity: 0; transform: translateX(24px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes why {
+    from { opacity: 0; transform: translateX(-14px); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes pop {
+    from { opacity: 0; transform: translateY(34px) scale(0.98); }
+    to { opacity: 1; transform: none; }
+  }
+  @keyframes fade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  @keyframes swing {
+    0%, 100% { transform: rotate(-2.5deg); }
+    50% { transform: rotate(2deg); }
+  }
+  @keyframes bar {
+    from { width: 0; }
+    to { width: 100%; }
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  html {
+    background: var(--color-outer);
+  }
+  body {
+    margin: 0;
+    background: var(--color-outer);
+    color: var(--color-cream);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+  }
+  :focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  ::selection {
+    background: var(--color-cream);
+    color: var(--color-ink);
+  }
+}
+
+/* Badge with lanyard on the home page */
+.badge-swing {
+  transform-origin: 50% 0;
+  animation: var(--animate-swing);
+}
+.badge-swing:hover {
+  animation-duration: 1.6s;
+}
+
+/* Product cards peeking out of the closed folder */
+.folder-card {
+  transform: rotate(var(--r));
+  transition: transform 0.45s var(--ease-soft);
+}
+.folder:hover .folder-card,
+.folder:focus-visible .folder-card {
+  transform: translateY(-13%) rotate(var(--r));
+}
+@keyframes rise-card {
+  from { opacity: 0; transform: translateY(60px) rotate(var(--r)); }
+  to { opacity: 1; transform: translateY(0) rotate(0deg); }
+}
+.folder-open-card {
+  animation: rise-card 0.6s var(--ease-soft) both;
+  transition: transform 0.3s ease;
+}
+.folder-open-card:hover {
+  transform: translateY(-6px);
+}
+
+.scrollbar-none {
+  scrollbar-width: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    animation-delay: 0ms !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+  .badge-swing {
+    animation: none !important;
+  }
 }

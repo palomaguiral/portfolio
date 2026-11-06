@@ -1,0 +1,382 @@
+{
+  "meta": {
+    "siteName": "Paloma Guiral Ortuño",
+    "jobTitle": "Data Scientist e AI Software Engineer",
+    "pages": {
+      "home": {
+        "title": "Paloma Guiral Ortuño · Data scientist y mucho más",
+        "description": "Portfolio de Paloma Guiral: data scientist e ingeniera de IA con casi 4 años llevando datos e IA a producción, y fundadora de Obrik, RISET y Vango."
+      },
+      "experience": {
+        "title": "Experiencia laboral · Paloma Guiral",
+        "description": "Casi 4 años llevando datos e IA a productos reales en Carina AI Studio, RTVE y Bettermaps."
+      },
+      "products": {
+        "title": "Productos propios · Paloma Guiral",
+        "description": "Obrik, RISET y Vango: tres productos que he ideado, diseñado y construido, y que están en producción."
+      },
+      "analysis": {
+        "title": "Análisis propios · Paloma Guiral",
+        "description": "Proyectos de estudio y curiosidad con datos: redes neuronales en bolsa, gemas ocultas del fútbol y desbordamientos del Júcar."
+      },
+      "stack": {
+        "title": "Stack · Paloma Guiral",
+        "description": "Las tecnologías y herramientas con las que trabajo: IA generativa, backend, cloud, datos y más."
+      },
+      "education": {
+        "title": "Educación · Paloma Guiral",
+        "description": "Máster en Machine Learning (UNED), Grado en Ciencia de Datos (UPV, intercambio en DTU) y certificaciones en cloud e IA."
+      },
+      "contact": {
+        "title": "Contacto · Paloma Guiral",
+        "description": "Escríbeme: email, LinkedIn, GitHub y CV de Paloma Guiral."
+      }
+    }
+  },
+  "common": {
+    "nav": {
+      "label": "Principal",
+      "home": "Inicio",
+      "experience": "Experiencia laboral",
+      "products": "Productos propios",
+      "analysis": "Análisis propios",
+      "stack": "Stack",
+      "education": "Educación",
+      "contact": "Contacto"
+    },
+    "language": {
+      "label": "Idioma",
+      "es": "Español",
+      "en": "English"
+    },
+    "skipToContent": "Saltar al contenido",
+    "downloadCv": "Descargar CV",
+    "location": "Valencia, España",
+    "newTab": "(se abre en una pestaña nueva)"
+  },
+  "home": {
+    "portfolio": "PORTFOLIO",
+    "portraitAlt": "Retrato de Paloma Guiral",
+    "nameLabel": "NOMBRE:",
+    "name": "Paloma Guiral Ortuño",
+    "profileLabel": "PERFIL:",
+    "profile": "Data scientist y mucho más...",
+    "intro1": "Soy Paloma. Me apasionan los datos y todo lo que se puede hacer con ellos: coger un problema, entenderlo y convertirlo en una solución.",
+    "intro2": "Me presento como data scientist porque hay que elegir un título, pero mi perfil es híbrido entre varias disciplinas",
+    "summaryNote": "¿Sin tiempo para ver la web entera? Te recomiendo este resumen",
+    "summaryButton": "Mi perfil en 1 minuto",
+    "areasLabel": "Áreas profesionales",
+    "areasNote": "mis áreas de conocimiento e interés",
+    "contributes": "Qué aporto",
+    "footerLangs": "ES / EN",
+    "areas": [
+      {
+        "title": "Inteligencia Artificial",
+        "text": "Integro IA en productos que usan clientes reales: asistentes con LLMs, extracción de información y automatización de tareas, desplegados en producción."
+      },
+      {
+        "title": "Data Science",
+        "text": "Convierto datos en respuestas para decidir mejor y construyo modelos que predicen o clasifican."
+      },
+      {
+        "title": "Data Engineering",
+        "text": "Preparo los datos para que el resto del equipo pueda usarlos: los recojo, limpio y unifico. He montado pipelines que integran datos de varios departamentos."
+      },
+      {
+        "title": "Software Engineering",
+        "text": "Construyo el software que sostiene un producto: APIs, bases de datos, infraestructura en la nube y monitorización para que todo funcione cada día."
+      },
+      {
+        "title": "Product Management",
+        "text": "Decido qué construir, para quién y en qué orden, y lo llevo hasta el lanzamiento.\n\nUtilizo tecnologías ágiles para gestionar el ciclo de vida del producto."
+      },
+      {
+        "title": "Diseño UX/UI",
+        "text": "Diseño interfaces claras y cuido la experiencia de quien las usa.\nLas pantallas de Obrik, RISET y Vango las he diseñado yo."
+      },
+      {
+        "title": "Emprendimiento y negocio",
+        "text": "Detecto oportunidades y pienso en usuarios, mercado y modelo de ingresos desde el principio.\nHe creado varios productos, mientras me formo por mi cuenta en un área más empresarial."
+      }
+    ]
+  },
+  "summary": {
+    "eyebrow": "Mi perfil en 1 minuto",
+    "name": "Paloma Guiral Ortuño",
+    "subtitle": "Data scientist y mucho más · Valencia · ES / VAL / EN",
+    "close": "Cerrar",
+    "closeBackdrop": "Cerrar el resumen",
+    "lead": "Casi 4 años construyendo con datos e IA en producción. Entiendo el dato, lo llevo a producción y pienso en el producto y el negocio que hay detrás.",
+    "areasLabel": "Áreas",
+    "areas": "Inteligencia Artificial · Data Science · Data Engineering · Software Engineering · Product Management · Diseño UX/UI · Emprendimiento y negocio",
+    "experienceTitle": "Experiencia",
+    "experience": [
+      { "role": "AI Software Engineer", "meta": "Carina AI Studio · 2025 - hoy", "note": "Productos con IA para el sector público · PO temporal" },
+      { "role": "Data Scientist", "meta": "RTVE · 2023 - 2025", "note": "Clasificación temática de contenidos con LLMs" },
+      { "role": "Back-end Developer", "meta": "Bettermaps · 2023", "note": "Backend y primeros pasos con LLMs en una startup" }
+    ],
+    "productsTitle": "Productos propios · en producción",
+    "products": [
+      { "name": "Obrik", "meta": "SaaS B2B · creadora" },
+      { "name": "RISET", "meta": "App móvil · cofundadora" },
+      { "name": "Vango", "meta": "App móvil · creadora" }
+    ],
+    "educationTitle": "Formación",
+    "education": [
+      { "name": "Máster en Machine Learning", "meta": "UNED · 2024" },
+      { "name": "Grado en Ciencia de Datos", "meta": "UPV · 2023 · intercambio en DTU" }
+    ],
+    "certifications": "+ certificaciones en LLMs, AWS, Azure, prompt engineering, inglés (FCE) e inversión bursátil, sales & marketing",
+    "stackTitle": "Stack",
+    "stack": [
+      { "k": "IA", "v": "LLMs, prompt engineering, RAG, embeddings, bases vectoriales, NLP, OpenAI, Amazon Bedrock, Claude, ElevenLabs, Ollama" },
+      { "k": "Lenguajes y backend", "v": "Python, SQL, R, FastAPI, Flask, APIs REST, microservicios" },
+      { "k": "Cloud y DevOps", "v": "AWS (Lambda, EC2, ECS, S3, SageMaker, API Gateway, DynamoDB), Azure (Functions, Cosmos DB, OpenAI), Docker, Terraform, Git, CI/CD, MLOps" },
+      { "k": "Datos y observabilidad", "v": "PostgreSQL, Supabase, Neo4j, MySQL, Sentry" }
+    ]
+  },
+  "experience": {
+    "eyebrow": "~4 años",
+    "title": "Experiencia laboral",
+    "intro": "Casi 4 años llevando datos e IA a productos reales: en una startup, en una gran empresa pública y en una empresa de producto.",
+    "hint": "pincha en cada carpeta →",
+    "tablistLabel": "Empresas",
+    "contributed": "Lo que aporté",
+    "highlight": "Destacado",
+    "tools": "Herramientas",
+    "jobs": [
+      {
+        "co": "Carina AI Studio",
+        "dates": "Abr 2025 — hoy",
+        "place": "España",
+        "role": "AI Software Engineer",
+        "ctx": "Empresa de producto con IA: diseñamos nuestras propias soluciones y las vendemos, sobre todo a la administración pública y al ámbito de la seguridad. Somos 4 desarrolladores y llevamos varios productos en paralelo en cada sprint.",
+        "bullets": [
+          { "t": "Automatización de trámites de principio a fin", "d": "Del audio de una declaración a un documento final: transcripción de voz y extracción de datos estructurados con LLMs, convertido en un producto reutilizable entre clientes." },
+          { "t": "Asistentes conversacionales configurables", "d": "Bots de atención ciudadana y de cita médica con LangGraph, RAG propio y voz con ElevenLabs. Cada cliente ajusta el suyo desde un panel web, sin tocar código." },
+          { "t": "IA que se puede medir", "d": "Prompts versionados en LangSmith, tests con resultados esperados y evaluación con LLM-as-a-judge para saber si un cambio mejora o empeora el producto." },
+          { "t": "Software fiable en producción", "d": "Infraestructura en AWS con Terraform, CI/CD con GitHub Actions en tres entornos (dev, UAT y producción), tests unitarios y end-to-end, y alertas de errores con Sentry." }
+        ],
+        "hi": [
+          { "t": "Product Owner temporal", "d": "Asumí de forma temporal la gestión del producto: creé y prioricé tareas, planifiqué los sprints en Jira e hice seguimiento del trabajo del equipo." },
+          { "t": "Decisiones con autonomía", "d": "Investigo alternativas, como el soporte multidioma de un producto, las documento y las propongo al equipo para decidir juntos." }
+        ],
+        "stack": ["Python", "FastAPI", "LLMs", "LangGraph", "LangSmith", "RAG", "Whisper", "ElevenLabs", "AWS", "Terraform", "GitHub Actions", "Sentry", "Scrum · Jira"]
+      },
+      {
+        "co": "RTVE",
+        "dates": "Dic 2023 — Mar 2025",
+        "place": "Madrid",
+        "role": "Data Scientist",
+        "ctx": "Proyecto interno para medir cuánto tiempo dedica cada canal a cada temática, un dato que se reporta al regulador audiovisual y que hasta entonces no se calculaba de forma sistemática.",
+        "bullets": [
+          { "t": "Del problema de negocio a la solución", "d": "Partíamos de una necesidad sin especificación técnica. Junto a otra data scientist, diseñamos el enfoque completo con mucha autonomía." },
+          { "t": "Datos reales y desordenados", "d": "Hablé con los responsables de contenidos de cada canal para entender sus históricos y unifiqué fuentes guardadas en sistemas y con códigos distintos." },
+          { "t": "Clasificación temática con LLMs", "d": "Extrajimos vía APIs los subtítulos de un año de emisiones. Probamos clustering y pasamos a LLMs con un catálogo cerrado de categorías, que daba resultados más útiles." },
+          { "t": "Resultados visibles", "d": "Dashboard en Power BI para filtrar por canal, temática, periodo y texto, presentado a varios directivos." }
+        ],
+        "hi": [
+          { "t": "Puente entre negocio y datos", "d": "Traducir una pregunta de dirección en un sistema de datos, trabajando con perfiles no técnicos de distintos departamentos." }
+        ],
+        "stack": ["Python", "LLMs", "Clustering", "ETL", "APIs", "Power BI"]
+      },
+      {
+        "co": "Bettermaps",
+        "dates": "Feb — Dic 2023",
+        "place": "Valencia",
+        "role": "Back-end Developer",
+        "ctx": "Startup acelerada por Lanzadera que creaba un producto web de divulgación histórica con IA: eliges un periodo y devuelve personajes, fechas clave, un resumen y lugares en el mapa. Entré en el último cuatrimestre de la carrera.",
+        "bullets": [
+          { "t": "LLMs desde el primer día", "d": "Llegué justo tras el lanzamiento de ChatGPT y seguía a diario las novedades de la API de OpenAI para incorporarlas al producto." },
+          { "t": "Backend del producto", "d": "Modelado de bases de datos y endpoints de la API que alimentaban la web, con mis primeros despliegues en la nube (AWS y Azure)." },
+          { "t": "Coordinación con front", "d": "Trabajo directo con el desarrollador de front para alinear lo que exponía el backend con lo que veía el usuario." }
+        ],
+        "hi": [
+          { "t": "Consultorías de IA", "d": "Atendí a clientes externos: reuniones para entender su necesidad y prototipos de IA a medida." }
+        ],
+        "stack": ["Python", "OpenAI API", "Prompt engineering", "APIs REST", "AWS", "Azure"]
+      }
+    ]
+  },
+  "products": {
+    "eyebrow": "Producción",
+    "title": "Productos propios",
+    "intro1": "Tres productos que he creado por iniciativa propia y que ahora mismo están en producción.",
+    "intro2": "En cada uno encontré un problema que quería solucionar, diseñé la solución, la construí y pienso cómo llevarla a sus usuarios.",
+    "hintClosed": "pasa el ratón y ábrela ↓",
+    "hintOpen": "elige uno ↓",
+    "openFolder": "Abrir la carpeta de productos",
+    "folderCount": "3 productos",
+    "folderSub": "en producción · pulsa para abrir",
+    "viewProduct": "Ver producto →",
+    "closeFolder": "← Cerrar carpeta",
+    "backToFolder": "← Carpeta de productos",
+    "switchLabel": "Cambiar de producto",
+    "productN": "Producto",
+    "storyHint": "la historia completa, en 4 pasos →",
+    "blocks": {
+      "spark": "la idea",
+      "problem": "el problema",
+      "shots": "capturas",
+      "role": "mi papel y stack"
+    },
+    "whatIDid": "Lo que hice",
+    "backend": "Backend",
+    "frontend": "Frontend",
+    "vibeNote": "· construido con vibe coding a partir de mi diseño",
+    "items": {
+      "obrik": {
+        "name": "Obrik",
+        "kind": "SaaS B2B · Fundadora y Product Engineer",
+        "cardKind": "SaaS B2B · creadora",
+        "cardLine": "SaaS para que las empresas de reformas informen a su cliente, en tiempo real, de cómo avanza su obra.",
+        "cardAlt": "Panel web de Obrik",
+        "status": "En producción · web y App Store",
+        "line": "Software para empresas de reformas: mantiene a su cliente informado, en tiempo real, de todo lo que pasa en su obra.",
+        "spark": "En una reforma integral pasan muchas cosas: un día se cambia el suelo, otro llegan los azulejos, otro la grifería, otro se montan los muebles. Quise que el cliente pudiera seguirlo todo sin tener que preguntar.",
+        "problem": "En las reformas llave en mano, el cliente vive pendiente de qué se ha hecho y qué falta, y la información llega a base de llamadas y mensajes sueltos. Con Obrik, el encargado sube cada novedad y el cliente la ve al momento: la empresa ahorra tiempo y transmite una imagen mucho más profesional.",
+        "links": ["obrik.net", "App Store"],
+        "shotAlts": ["Obrik: lista de obras", "Obrik: menú de una obra", "Obrik: panel web"],
+        "role": ["Idea y negocio", "Producto", "Diseño UX/UI", "Backend: APIs y base de datos", "Frontend web y móvil", "Despliegue"],
+        "back": ["Python", "FastAPI", "Pydantic", "Supabase", "JWT", "Stripe (suscripciones)", "Render"],
+        "front": ["Next.js", "Tailwind CSS", "Vercel", "React Native", "Expo", "EAS Build"]
+      },
+      "riset": {
+        "name": "RISET",
+        "kind": "App móvil · Cofundadora y developer",
+        "cardKind": "App móvil · Cofundadora",
+        "cardLine": "App de reflexión guiada con ciclos temáticos, una pregunta al día y retos accionables.",
+        "cardAlt": "Pantalla de inicio de RISET",
+        "status": "Disponible en App Store",
+        "line": "App de reflexión guiada: ciclos temáticos con una pregunta al día y retos para pasar a la acción.",
+        "spark": "Nació con mi socio. Queríamos ayudar a cuidar los pilares del día a día (deporte, nutrición, reflexión, meditación) y, tras darle varias vueltas, nos centramos en un problema que vivíamos en nuestra propia generación. Pensarlo entre dos nos llevó a ideas mucho mejores que en solitario.",
+        "problem": "Vamos muy rápido: muchos estímulos, presión por ser productivos y compararnos en redes. Nos cuesta parar a reflexionar y, sobre todo, saber sobre qué hacerlo; un diario en blanco no ayuda. RISET propone ciclos temáticos de varias semanas con una pregunta diaria, común para todos, pulsos (retos accionables) y la opción de compartir tu progreso con tu red.",
+        "links": ["risetstudio.app", "App Store"],
+        "shotAlts": ["RISET: pantalla de inicio con sus cuatro secciones"],
+        "role": ["Cofundadora", "Producto y negocio (con mi socio)", "Diseño UX/UI", "Backend: APIs y base de datos", "Frontend", "Despliegue"],
+        "back": ["Python", "FastAPI", "Supabase", "APScheduler", "slowapi", "Sentry", "Render"],
+        "front": ["TypeScript", "React Native", "Expo", "Expo Router", "Zustand", "Sign in with Apple"]
+      },
+      "vango": {
+        "name": "Vango",
+        "kind": "App móvil · Creadora",
+        "cardKind": "App móvil · Creadora",
+        "cardLine": "Pasaporte de arte: un mapa con las obras imprescindibles del mundo para marcar las que has visto.",
+        "cardAlt": "Pantallas de Vango",
+        "status": "Disponible en Google Play",
+        "line": "Un pasaporte de arte: un mapa con las obras imprescindibles del mundo para marcar las que has visto y añadir las tuyas.",
+        "spark": "Me encantan viajar y el arte, y casi en cualquier lugar hay alguna obra icónica: un cuadro, una escultura, un grafiti o un edificio. Quise reunirlas todas en un mapa.",
+        "problem": "No existía un sitio único para descubrir qué obras merece la pena ver en cada lugar y llevar la cuenta de las que ya has visto. Vango parte de una selección de obras imprescindibles que elaboré tras un research propio y, como el arte es subjetivo, permite añadir las tuyas con ubicación, foto y descripción.",
+        "links": ["vango-app.carrd.co", "Google Play"],
+        "shotAlts": ["Vango: inicio y mapa", "Vango: más pantallas"],
+        "role": ["Idea y negocio", "Producto", "Research y selección de obras", "Diseño UX/UI", "Backend: APIs y base de datos", "Frontend", "Despliegue"],
+        "back": ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Docker", "PyJWT", "pytest", "Railway"],
+        "front": ["Flutter", "Dart", "Riverpod", "OpenStreetMap", "PostHog", "AdMob", "Codemagic"]
+      }
+    }
+  },
+  "analysis": {
+    "eyebrow": "Curiosidad con datos",
+    "title": "Análisis propios",
+    "intro": "Proyectos de estudio y curiosidad: no están en producción, pero muestran cómo pienso un problema con datos.",
+    "listLabel": "Elige un análisis",
+    "bizTitle": "La historia de negocio · ¿qué decisión ayuda a tomar?",
+    "blockKeys": ["el problema", "los datos", "lo que hice", "el resultado"],
+    "items": [
+      {
+        "name": "Redes neuronales en bolsa",
+        "sub": "TFM · Inditex · GRU vs LSTM",
+        "tag": "Trabajo Fin de Máster · UNED",
+        "links": ["Leer el TFM (PDF)"],
+        "figAlt": "Precio real frente a predicho por el mejor modelo (GRU)",
+        "blocks": [
+          "¿Qué arquitectura de red neuronal predice mejor el precio de cierre ajustado de una acción del IBEX 35?",
+          "Histórico de Inditex (yfinance) más indicadores técnicos: SMA, EMA, MACD, RSI, CCI, VWAP y Williams %R, en 5 combinaciones.",
+          "Comparé RNN, LSTM, Conv1D-LSTM y GRU en dos configuraciones cada una: 40 modelos evaluados con MAE, MSE y RMSE.",
+          "Ganó la GRU con precios de apertura, máximo, mínimo, volumen y cierre: RMSE de 0,98, el más bajo de todos."
+        ],
+        "biz": "Dar a un inversor señales cuantitativas para decidir cuándo entrar o salir. Siguiente paso: optimizar hiperparámetros y añadir el sentimiento de las noticias financieras."
+      },
+      {
+        "name": "Gemas ocultas del fútbol",
+        "sub": "Similaridad vectorial · FIFA",
+        "tag": "Proyecto personal · LinkedIn",
+        "links": ["Ver el post"],
+        "figAlt": "Tabla: once del Real Madrid y sustituto más parecido de cada jugador, con valor y edad",
+        "blocks": [
+          "¿Se puede replicar el once del Real Madrid de la Champions 23/24 con jugadores al alcance de cualquier club?",
+          "Dataset de jugadores de la temporada anterior con habilidades, valor de mercado y edad, filtrado a 28 años o menos y 25 M€ o menos.",
+          "Elegí las habilidades clave de cada posición y, para cada titular, busqué el jugador más parecido con distancia euclidiana. Como mejora, propongo PCA para quedarme con lo que más explica el rendimiento.",
+          "Un once alternativo completo de 214,5 M€ frente a los 692,5 M€ del original, un 69 % menos. Por ejemplo, Vinícius (158,5 M€) → L. Bailey (21 M€)."
+        ],
+        "biz": "Ayuda a una dirección deportiva a fichar con criterio: encontrar diamantes en bruto con un estilo de juego parecido al de grandes estrellas, a una fracción del coste."
+      },
+      {
+        "name": "Desbordamientos del Júcar",
+        "sub": "Predicción · datos hidrológicos",
+        "tag": "Proyecto personal · LinkedIn",
+        "links": ["Post: datos", "Post: derivadas"],
+        "figAlt": "Caudal de la Rambla del Poyo el 29 de octubre de 2024 frente al umbral de aviso de 150 m³/s",
+        "blocks": [
+          "Tras la DANA del 29 de octubre de 2024 en Valencia: ¿qué decían los datos del caudal de la Rambla del Poyo y se podía haber anticipado la crecida?",
+          "Datos cincominutales de caudal publicados por la Confederación Hidrográfica del Júcar y la notificación enviada a Protección Civil.",
+          "Analicé la serie frente al umbral de aviso de 150 m³/s y estudié la primera y la segunda derivada del caudal para detectar las fases de aceleración.",
+          "La tendencia ascendente empezó a las 15:50 h y la fase crítica hacia las 17:00 h, pero no se notificó a Protección Civil hasta las 18:43 h, con el caudal diez veces por encima del umbral. También detecté un retraso de publicación de una hora e incoherencias en los datos."
+        ],
+        "biz": "Las derivadas del caudal pueden funcionar como señal de aviso temprano. Y los datos solo sirven para decidir si se publican en tiempo real y son coherentes."
+      }
+    ]
+  },
+  "stack": {
+    "eyebrow": "Herramientas",
+    "title": "Stack",
+    "intro": "Las tecnologías y herramientas con las que trabajo, agrupadas por su utilidad.",
+    "sectionLabel": "Stack tecnológico",
+    "groups": [
+      { "title": "IA generativa y ML", "items": ["LLMs", "Prompt engineering", "RAG", "Embeddings", "Bases vectoriales", "NLP", "OpenAI", "Amazon Bedrock", "Claude", "ElevenLabs", "Ollama", "scikit-learn"] },
+      { "title": "Lenguajes", "items": ["Python", "SQL", "R", "Matlab", "HTML"] },
+      { "title": "Backend y APIs", "items": ["FastAPI", "Flask", "APIs REST", "Microservicios", "Pydantic", "SQLAlchemy", "Alembic", "Stripe"] },
+      { "title": "Cloud y DevOps", "items": ["AWS: Lambda · EC2 · ECS · S3 · Canaries", "Azure: Functions · Cosmos DB · OpenAI", "Docker", "Terraform", "CI/CD", "MLOps", "Linux", "Render", "Railway", "Vercel"] },
+      { "title": "Bases de datos y observabilidad", "items": ["PostgreSQL", "Supabase", "DynamoDB", "Cosmos DB", "Neo4j", "MariaDB / MySQL", "Sentry"] },
+      { "title": "Datos y análisis", "items": ["pandas", "NumPy", "ETL", "Clustering", "Series temporales", "Matplotlib"] },
+      { "title": "Frontend y móvil", "note": "con vibe coding, a partir de mis diseños", "items": ["React Native", "Expo", "Next.js", "Tailwind CSS", "Flutter", "TypeScript"] },
+      { "title": "Forma de trabajar", "items": ["Agile", "Jira", "Git / GitHub", "Desarrollo asistido por IA"] },
+      { "title": "Idiomas", "items": ["Español (nativa)", "Valenciano (nativa)", "Inglés (profesional)"] }
+    ]
+  },
+  "education": {
+    "eyebrow": "Formación",
+    "title": "Educación",
+    "intro": "Ciencia de datos como base, machine learning como especialidad y formación continua en cloud e IA generativa.",
+    "certsTitle": "Licencias y certificaciones",
+    "degrees": [
+      { "date": "Sept 2024", "title": "Máster en Machine Learning", "school": "UNED", "note": "TFM: redes neuronales artificiales para predecir precios bursátiles.", "seal": "UNED" },
+      { "date": "Jun 2023", "title": "Grado en Ciencia de Datos", "school": "Universitat Politècnica de València", "note": "TFG: aplicación para monitorizar operaciones en bolsa.", "seal": "UPV" },
+      { "date": "Ene 2023", "title": "Grado en Ciencia de Datos", "school": "Technical University of Denmark (DTU)", "note": "Estancia de intercambio en Dinamarca.", "seal": "DTU" }
+    ],
+    "certs": [
+      { "name": "Sales and Marketing Badge Course", "org": "Santa Clara University · MOBI" },
+      { "name": "Artificial Intelligence and LLMs: Operation, Key Components and Applications", "org": "Universidad de Zaragoza" },
+      { "name": "AWS Cloud Technical Essentials", "org": "Amazon Web Services" },
+      { "name": "ChatGPT Prompt Engineering for Developers & Building Systems with the ChatGPT API", "org": "DeepLearning.AI" },
+      { "name": "Introduction to Microsoft Azure Cloud Services", "org": "Microsoft" },
+      { "name": "First Certificate in English", "org": "University of Cambridge" },
+      { "name": "Introduction to stock market investment", "org": "edX" }
+    ]
+  },
+  "contact": {
+    "eyebrow": "Hablemos",
+    "title": "Contacto",
+    "intro": "Si buscas a alguien que entienda el dato, lo lleve a producción y piense en el producto, escríbeme.",
+    "email": "Email",
+    "copy": "Copiar",
+    "copied": "¡Copiado!",
+    "copyLabel": "Copiar el email al portapapeles",
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "cv": "Currículum",
+    "locationLabel": "ubicación actual ·",
+    "languagesLabel": "idiomas ·",
+    "languages": "español y valenciano (nativa), inglés profesional"
+  }
+}

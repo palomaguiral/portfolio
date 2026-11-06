@@ -74,24 +74,24 @@ export default async function ProductPage({ params }: PageProps<"/[lang]/product
 
       <div className="flex min-w-0 flex-col lg:flex-[1_1_760px]">
         <nav aria-label={t.switchLabel}>
-          <ul className="scrollbar-none m-0 flex list-none items-end gap-1.5 overflow-x-auto p-0 pt-2 pl-3.5">
+          <ul className="m-0 flex list-none items-end gap-1 p-0 pt-2 sm:gap-1.5 sm:pl-3.5">
             {productSlugs.map((s, i) => {
               const sel = s === slug;
               return (
-                <li key={s} className="shrink-0">
+                <li key={s} className="min-w-0 flex-1 sm:flex-none">
                   <Link
                     href={`/${lang}/productos/${s}`}
                     aria-current={sel ? "page" : undefined}
                     scroll={false}
-                    className={`flex items-center gap-3 rounded-t-2xl pr-6 pb-3.5 pl-[22px] text-left no-underline transition-transform duration-[250ms] ease-soft hover:-translate-y-[5px] sm:min-w-[150px] ${
+                    className={`flex items-center gap-3 rounded-t-2xl px-3 pb-3.5 text-left sm:pr-6 sm:pl-[22px] no-underline transition-transform duration-[250ms] ease-soft hover:-translate-y-[5px] sm:min-w-[150px] ${
                       sel ? "bg-cream pt-4 text-ink" : "bg-deep pt-3 text-cream"
                     }`}
                   >
-                    <span>
-                      <span className="block text-[11px] font-semibold tracking-[0.16em] uppercase opacity-80">
+                    <span className="min-w-0">
+                      <span className="block text-[10px] font-semibold tracking-[0.12em] uppercase opacity-80 sm:text-[11px] sm:tracking-[0.16em]">
                         {t.productN} 0{i + 1}
                       </span>
-                      <span className="block font-serif text-2xl leading-[1.05] font-semibold">{t.items[s].name}</span>
+                      <span className="block truncate font-serif text-xl leading-[1.05] font-semibold sm:text-2xl">{t.items[s].name}</span>
                     </span>
                   </Link>
                 </li>

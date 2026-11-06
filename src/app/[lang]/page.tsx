@@ -27,7 +27,7 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
       className="flex flex-col flex-wrap gap-10 px-4 pt-10 pb-8 sm:px-10 lg:flex-row lg:pb-24"
     >
       {/* Badge on a lanyard + polaroids */}
-      <div className="relative mx-auto h-[620px] w-[300px] shrink-0 sm:w-[330px] lg:mx-0 lg:-mt-10 lg:h-auto lg:min-h-[600px] lg:flex-[0_0_330px] lg:self-stretch">
+      <div className="relative mx-auto h-[690px] w-[300px] shrink-0 sm:w-[330px] lg:mx-0 lg:-mt-10 lg:h-auto lg:min-h-[600px] lg:flex-[0_0_330px] lg:self-stretch">
         <div
           aria-hidden="true"
           className="absolute top-[449px] left-[160px] box-border h-[172px] w-[140px] rotate-[8deg] bg-cream px-2 pt-2 pb-[26px] shadow-[0_18px_34px_rgba(40,0,0,0.4)] transition-transform duration-[400ms] ease-soft hover:-translate-y-2 hover:rotate-0 sm:left-[189px]"

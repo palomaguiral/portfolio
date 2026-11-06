@@ -31,7 +31,6 @@ export default function HomeAreas({ areas, label, note, contributes }: Props) {
                 onFocus={() => setOn(i)}
                 onClick={() => setOn(i)}
                 aria-expanded={act}
-                aria-controls="area-why"
                 className={`flex w-full cursor-pointer items-baseline gap-3.5 border-0 bg-transparent py-3 text-left transition-[color,padding] duration-[250ms,350ms] ease-soft ${
                   act ? "pl-3.5 text-white" : "pl-0 text-rose"
                 }`}
@@ -40,6 +39,13 @@ export default function HomeAreas({ areas, label, note, contributes }: Props) {
                   {a.title}
                 </span>
               </button>
+              {/* Mobile: the card opens right under the tapped area (accordion). */}
+              {act && (
+                <div key={on} className="mb-3 animate-rise-sm rounded-[18px] bg-cream px-5 py-4 text-[#4a080b] lg:hidden">
+                  <p className="m-0 mb-2 text-xs font-semibold tracking-[0.14em] uppercase">{contributes}</p>
+                  <p className="m-0 text-[15px] leading-[1.55] whitespace-pre-line">{a.text}</p>
+                </div>
+              )}
             </li>
           );
         })}
@@ -56,11 +62,10 @@ export default function HomeAreas({ areas, label, note, contributes }: Props) {
         <p className="mt-[34px] mb-0 font-hand text-[25px] leading-[1.1] text-cream">{note}</p>
       </div>
 
-      <div className="relative min-w-[200px] flex-[1_1_220px]" aria-live="polite">
+      <div className="relative hidden min-w-[200px] flex-[1_1_220px] lg:block" aria-live="polite">
         <div
-          id="area-why"
           key={on}
-          className="animate-why rounded-[18px] bg-cream px-[22px] py-5 text-[#4a080b] lg:absolute lg:right-0 lg:left-0"
+          className="animate-why absolute right-0 left-0 rounded-[18px] bg-cream px-[22px] py-5 text-[#4a080b]"
           style={{ top }}
         >
           <p className="m-0 mb-2 text-xs font-semibold tracking-[0.14em] uppercase">

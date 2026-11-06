@@ -35,7 +35,14 @@ export default function ProductsFolder({ t, lang }: Props) {
   return (
     <section className="relative flex min-h-[420px] items-center justify-center pt-10 lg:min-h-[560px] lg:flex-[1_1_640px]">
       <p aria-hidden="true" className="absolute top-0 m-0 font-hand text-2xl lg:right-[348px]">
-        {open ? t.hintOpen : t.hintClosed}
+        {open ? (
+          t.hintOpen
+        ) : (
+          <>
+            <span className="[@media(hover:none)]:hidden">{t.hintClosed}</span>
+            <span className="hidden [@media(hover:none)]:inline">{t.hintClosedTouch}</span>
+          </>
+        )}
       </p>
 
       {!open ? (

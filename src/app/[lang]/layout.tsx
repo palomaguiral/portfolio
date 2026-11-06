@@ -29,6 +29,15 @@ export function generateStaticParams() {
   return locales.map((lang) => ({ lang }));
 }
 
+/**
+ * The desktop pages are one-screen compositions designed at 1440×900. On smaller laptop
+ * windows (e.g. 1536×730 with 125 % Windows scaling) scale the whole page down so it still
+ * fits without scrolling — the same thing as zooming the browser out by hand. Never scales up,
+ * never below 0.6 (below that the page simply scrolls), and does nothing under 1024 px wide,
+ * where the stacked mobile layout takes over. --app-h is the window height in zoomed CSS px.
+ */
+const fitToScreen = `(function(){var d=document.documentElement;function f(){var w=innerWidth,h=innerHeight;if(w<1024){d.style.zoom="";d.style.removeProperty("--app-h");return}var z=Math.max(0.6,Math.min(1,w/1440,h/900));d.style.zoom=z===1?"":String(z);d.style.setProperty("--app-h",h/z+"px")}f();addEventListener("resize",f)})()`;
+
 export const viewport: Viewport = {
   themeColor: "#5A0A0E",
 };
@@ -52,8 +61,10 @@ export default async function LangLayout({ children, params }: LayoutProps<"/[la
   };
 
   return (
-    <html lang={lang} className={`${bodoni.variable} ${inter.variable} ${caveat.variable}`}>
+    // suppressHydrationWarning: the fit-to-screen script sets zoom/--app-h on <html> before React hydrates.
+    <html lang={lang} className={`${bodoni.variable} ${inter.variable} ${caveat.variable}`} suppressHydrationWarning>
       <body>
+        <script dangerouslySetInnerHTML={{ __html: fitToScreen }} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(person).replace(/</g, "\\u003c") }}

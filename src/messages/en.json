@@ -36,6 +36,8 @@
   "common": {
     "nav": {
       "label": "Main",
+      "menu": "Menu",
+      "closeMenu": "Close menu",
       "home": "Home",
       "experience": "Work experience",
       "products": "My products",
@@ -111,28 +113,67 @@
     "areas": "Artificial Intelligence · Data Science · Data Engineering · Software Engineering · Product Management · UX/UI Design · Entrepreneurship & Business",
     "experienceTitle": "Experience",
     "experience": [
-      { "role": "AI Software Engineer", "meta": "Carina AI Studio · 2025 - present", "note": "AI products for the public sector · interim PO" },
-      { "role": "Data Scientist", "meta": "RTVE · 2023 - 2025", "note": "Topic classification of broadcast content with LLMs" },
-      { "role": "Back-end Developer", "meta": "Bettermaps · 2023", "note": "Backend and first steps with LLMs at a startup" }
+      {
+        "role": "AI Software Engineer",
+        "meta": "Carina AI Studio · 2025 - present",
+        "note": "AI products for the public sector · interim PO"
+      },
+      {
+        "role": "Data Scientist",
+        "meta": "RTVE · 2023 - 2025",
+        "note": "Topic classification of broadcast content with LLMs"
+      },
+      {
+        "role": "Back-end Developer",
+        "meta": "Bettermaps · 2023",
+        "note": "Backend and first steps with LLMs at a startup"
+      }
     ],
     "productsTitle": "My products · live",
     "products": [
-      { "name": "Obrik", "meta": "B2B SaaS · creator" },
-      { "name": "RISET", "meta": "Mobile app · co-founder" },
-      { "name": "Vango", "meta": "Mobile app · creator" }
+      {
+        "name": "Obrik",
+        "meta": "B2B SaaS · creator"
+      },
+      {
+        "name": "RISET",
+        "meta": "Mobile app · co-founder"
+      },
+      {
+        "name": "Vango",
+        "meta": "Mobile app · creator"
+      }
     ],
     "educationTitle": "Education",
     "education": [
-      { "name": "Master's in Machine Learning", "meta": "UNED · 2024" },
-      { "name": "Bachelor's in Data Science", "meta": "UPV · 2023 · exchange at DTU" }
+      {
+        "name": "Master's in Machine Learning",
+        "meta": "UNED · 2024"
+      },
+      {
+        "name": "Bachelor's in Data Science",
+        "meta": "UPV · 2023 · exchange at DTU"
+      }
     ],
     "certifications": "+ certifications in LLMs, AWS, Azure, prompt engineering, English (FCE), stock market investing, and sales & marketing",
     "stackTitle": "Stack",
     "stack": [
-      { "k": "AI", "v": "LLMs, prompt engineering, RAG, embeddings, vector databases, NLP, OpenAI, Amazon Bedrock, Claude, ElevenLabs, Ollama" },
-      { "k": "Languages and backend", "v": "Python, SQL, R, FastAPI, Flask, REST APIs, microservices" },
-      { "k": "Cloud and DevOps", "v": "AWS (Lambda, EC2, ECS, S3, SageMaker, API Gateway, DynamoDB), Azure (Functions, Cosmos DB, OpenAI), Docker, Terraform, Git, CI/CD, MLOps" },
-      { "k": "Data and observability", "v": "PostgreSQL, Supabase, Neo4j, MySQL, Sentry" }
+      {
+        "k": "AI",
+        "v": "LLMs, prompt engineering, RAG, embeddings, vector databases, NLP, OpenAI, Amazon Bedrock, Claude, ElevenLabs, Ollama"
+      },
+      {
+        "k": "Languages and backend",
+        "v": "Python, SQL, R, FastAPI, Flask, REST APIs, microservices"
+      },
+      {
+        "k": "Cloud and DevOps",
+        "v": "AWS (Lambda, EC2, ECS, S3, SageMaker, API Gateway, DynamoDB), Azure (Functions, Cosmos DB, OpenAI), Docker, Terraform, Git, CI/CD, MLOps"
+      },
+      {
+        "k": "Data and observability",
+        "v": "PostgreSQL, Supabase, Neo4j, MySQL, Sentry"
+      }
     ]
   },
   "experience": {
@@ -152,16 +193,48 @@
         "role": "AI Software Engineer",
         "ctx": "AI product company: we design our own solutions and sell them, mainly to public administrations and the security sector. We're a team of 4 developers running several products in parallel every sprint.",
         "bullets": [
-          { "t": "End-to-end paperwork automation", "d": "From the audio of a statement to a final document: speech transcription and structured data extraction with LLMs, turned into a product reusable across clients." },
-          { "t": "Configurable conversational assistants", "d": "Citizen-service and medical-appointment bots built with LangGraph, a custom RAG and ElevenLabs voice. Each client tunes their own from a web dashboard, no code needed." },
-          { "t": "AI you can measure", "d": "Prompts versioned in LangSmith, tests with expected outputs and LLM-as-a-judge evaluation to know whether a change makes the product better or worse." },
-          { "t": "Reliable software in production", "d": "AWS infrastructure with Terraform, CI/CD with GitHub Actions across three environments (dev, UAT and production), unit and end-to-end tests, and error alerts with Sentry." }
+          {
+            "t": "End-to-end paperwork automation",
+            "d": "From the audio of a statement to a final document: speech transcription and structured data extraction with LLMs, turned into a product reusable across clients."
+          },
+          {
+            "t": "Configurable conversational assistants",
+            "d": "Citizen-service and medical-appointment bots built with LangGraph, a custom RAG and ElevenLabs voice. Each client tunes their own from a web dashboard, no code needed."
+          },
+          {
+            "t": "AI you can measure",
+            "d": "Prompts versioned in LangSmith, tests with expected outputs and LLM-as-a-judge evaluation to know whether a change makes the product better or worse."
+          },
+          {
+            "t": "Reliable software in production",
+            "d": "AWS infrastructure with Terraform, CI/CD with GitHub Actions across three environments (dev, UAT and production), unit and end-to-end tests, and error alerts with Sentry."
+          }
         ],
         "hi": [
-          { "t": "Interim Product Owner", "d": "I temporarily took over product management: I created and prioritised tasks, planned sprints in Jira and tracked the team's work." },
-          { "t": "Autonomous decision-making", "d": "I research alternatives, such as multi-language support for a product, document them and bring them to the team so we can decide together." }
+          {
+            "t": "Interim Product Owner",
+            "d": "I temporarily took over product management: I created and prioritised tasks, planned sprints in Jira and tracked the team's work."
+          },
+          {
+            "t": "Autonomous decision-making",
+            "d": "I research alternatives, such as multi-language support for a product, document them and bring them to the team so we can decide together."
+          }
         ],
-        "stack": ["Python", "FastAPI", "LLMs", "LangGraph", "LangSmith", "RAG", "Whisper", "ElevenLabs", "AWS", "Terraform", "GitHub Actions", "Sentry", "Scrum · Jira"]
+        "stack": [
+          "Python",
+          "FastAPI",
+          "LLMs",
+          "LangGraph",
+          "LangSmith",
+          "RAG",
+          "Whisper",
+          "ElevenLabs",
+          "AWS",
+          "Terraform",
+          "GitHub Actions",
+          "Sentry",
+          "Scrum · Jira"
+        ]
       },
       {
         "co": "RTVE",
@@ -170,15 +243,37 @@
         "role": "Data Scientist",
         "ctx": "Internal project to measure how much airtime each channel devotes to each topic: a figure reported to the broadcasting regulator that until then had not been calculated systematically.",
         "bullets": [
-          { "t": "From business problem to solution", "d": "We started from a need with no technical specification. Together with another data scientist, I designed the whole approach with a high degree of autonomy." },
-          { "t": "Real, messy data", "d": "I spoke with each channel's content managers to understand their archives, and unified sources stored in different systems with different codes." },
-          { "t": "Topic classification with LLMs", "d": "We pulled a full year of broadcast subtitles through APIs. We tried clustering and then moved to LLMs with a closed catalogue of categories, which gave more useful results." },
-          { "t": "Visible results", "d": "A Power BI dashboard to filter by channel, topic, period and text, presented to several senior managers." }
+          {
+            "t": "From business problem to solution",
+            "d": "We started from a need with no technical specification. Together with another data scientist, I designed the whole approach with a high degree of autonomy."
+          },
+          {
+            "t": "Real, messy data",
+            "d": "I spoke with each channel's content managers to understand their archives, and unified sources stored in different systems with different codes."
+          },
+          {
+            "t": "Topic classification with LLMs",
+            "d": "We pulled a full year of broadcast subtitles through APIs. We tried clustering and then moved to LLMs with a closed catalogue of categories, which gave more useful results."
+          },
+          {
+            "t": "Visible results",
+            "d": "A Power BI dashboard to filter by channel, topic, period and text, presented to several senior managers."
+          }
         ],
         "hi": [
-          { "t": "Bridge between business and data", "d": "Turning a question from leadership into a data system, working with non-technical people from different departments." }
+          {
+            "t": "Bridge between business and data",
+            "d": "Turning a question from leadership into a data system, working with non-technical people from different departments."
+          }
         ],
-        "stack": ["Python", "LLMs", "Clustering", "ETL", "APIs", "Power BI"]
+        "stack": [
+          "Python",
+          "LLMs",
+          "Clustering",
+          "ETL",
+          "APIs",
+          "Power BI"
+        ]
       },
       {
         "co": "Bettermaps",
@@ -187,14 +282,33 @@
         "role": "Back-end Developer",
         "ctx": "Startup accelerated by Lanzadera, building an AI-powered web product for popular history: pick a period and it returns key figures, dates, a summary and places on a map. I joined during the last semester of my degree.",
         "bullets": [
-          { "t": "LLMs from day one", "d": "I joined right after ChatGPT launched and followed the OpenAI API updates daily to bring them into the product." },
-          { "t": "Product backend", "d": "Database modelling and the API endpoints powering the website, with my first cloud deployments (AWS and Azure)." },
-          { "t": "Working with the front end", "d": "Close collaboration with the front-end developer to align what the backend exposed with what users saw." }
+          {
+            "t": "LLMs from day one",
+            "d": "I joined right after ChatGPT launched and followed the OpenAI API updates daily to bring them into the product."
+          },
+          {
+            "t": "Product backend",
+            "d": "Database modelling and the API endpoints powering the website, with my first cloud deployments (AWS and Azure)."
+          },
+          {
+            "t": "Working with the front end",
+            "d": "Close collaboration with the front-end developer to align what the backend exposed with what users saw."
+          }
         ],
         "hi": [
-          { "t": "AI consulting", "d": "I worked with external clients: meetings to understand their needs and tailor-made AI prototypes." }
+          {
+            "t": "AI consulting",
+            "d": "I worked with external clients: meetings to understand their needs and tailor-made AI prototypes."
+          }
         ],
-        "stack": ["Python", "OpenAI API", "Prompt engineering", "REST APIs", "AWS", "Azure"]
+        "stack": [
+          "Python",
+          "OpenAI API",
+          "Prompt engineering",
+          "REST APIs",
+          "AWS",
+          "Azure"
+        ]
       }
     ]
   },
@@ -204,6 +318,7 @@
     "intro1": "Three products I've created on my own initiative, all currently live in production.",
     "intro2": "For each one I found a problem I wanted to solve, designed the solution, built it and keep working on how to get it to its users.",
     "hintClosed": "hover and open it ↓",
+    "hintClosedTouch": "tap to open it ↓",
     "hintOpen": "pick one ↓",
     "openFolder": "Open the products folder",
     "folderCount": "3 products",
@@ -235,11 +350,40 @@
         "line": "Software for renovation companies: it keeps their clients informed, in real time, of everything happening on their project.",
         "spark": "A full renovation involves a lot: one day the floor is replaced, another the tiles arrive, then the taps, then the furniture is fitted. I wanted clients to be able to follow it all without having to ask.",
         "problem": "In turnkey renovations, clients are constantly wondering what's been done and what's left, and information arrives through calls and scattered messages. With Obrik, the site manager uploads every update and the client sees it instantly: the company saves time and comes across as far more professional.",
-        "links": ["obrik.net", "App Store"],
-        "shotAlts": ["Obrik: project list", "Obrik: project menu", "Obrik: web dashboard"],
-        "role": ["Idea and business", "Product", "UX/UI design", "Backend: APIs and database", "Web and mobile front end", "Deployment"],
-        "back": ["Python", "FastAPI", "Pydantic", "Supabase", "JWT", "Stripe (subscriptions)", "Render"],
-        "front": ["Next.js", "Tailwind CSS", "Vercel", "React Native", "Expo", "EAS Build"]
+        "links": [
+          "obrik.net",
+          "App Store"
+        ],
+        "shotAlts": [
+          "Obrik: project list",
+          "Obrik: project menu",
+          "Obrik: web dashboard"
+        ],
+        "role": [
+          "Idea and business",
+          "Product",
+          "UX/UI design",
+          "Backend: APIs and database",
+          "Web and mobile front end",
+          "Deployment"
+        ],
+        "back": [
+          "Python",
+          "FastAPI",
+          "Pydantic",
+          "Supabase",
+          "JWT",
+          "Stripe (subscriptions)",
+          "Render"
+        ],
+        "front": [
+          "Next.js",
+          "Tailwind CSS",
+          "Vercel",
+          "React Native",
+          "Expo",
+          "EAS Build"
+        ]
       },
       "riset": {
         "name": "RISET",
@@ -251,11 +395,38 @@
         "line": "Guided reflection app: themed cycles with one question a day and challenges to turn reflection into action.",
         "spark": "It started with my business partner. We wanted to help people look after the pillars of everyday life (exercise, nutrition, reflection, meditation) and, after going round in circles a few times, we focused on a problem our own generation was living. Thinking it through as a pair led to much better ideas than either of us would have had alone.",
         "problem": "We move very fast: endless stimuli, pressure to be productive and comparing ourselves on social media. It's hard to stop and reflect and, above all, to know what to reflect on; a blank journal doesn't help. RISET offers themed cycles lasting several weeks with a daily question shared by everyone, pulses (actionable challenges) and the option to share your progress with your network.",
-        "links": ["risetstudio.app", "App Store"],
-        "shotAlts": ["RISET: home screen with its four sections"],
-        "role": ["Co-founder", "Product and business (with my partner)", "UX/UI design", "Backend: APIs and database", "Front end", "Deployment"],
-        "back": ["Python", "FastAPI", "Supabase", "APScheduler", "slowapi", "Sentry", "Render"],
-        "front": ["TypeScript", "React Native", "Expo", "Expo Router", "Zustand", "Sign in with Apple"]
+        "links": [
+          "risetstudio.app",
+          "App Store"
+        ],
+        "shotAlts": [
+          "RISET: home screen with its four sections"
+        ],
+        "role": [
+          "Co-founder",
+          "Product and business (with my partner)",
+          "UX/UI design",
+          "Backend: APIs and database",
+          "Front end",
+          "Deployment"
+        ],
+        "back": [
+          "Python",
+          "FastAPI",
+          "Supabase",
+          "APScheduler",
+          "slowapi",
+          "Sentry",
+          "Render"
+        ],
+        "front": [
+          "TypeScript",
+          "React Native",
+          "Expo",
+          "Expo Router",
+          "Zustand",
+          "Sign in with Apple"
+        ]
       },
       "vango": {
         "name": "Vango",
@@ -267,11 +438,43 @@
         "line": "An art passport: a map of the world's must-see artworks where you tick off the ones you've seen and add your own.",
         "spark": "I love travelling and art, and almost anywhere you go there's an iconic work: a painting, a sculpture, a mural or a building. I wanted to bring them all together on one map.",
         "problem": "There was no single place to discover which artworks are worth seeing in each place and keep track of the ones you've already seen. Vango starts from a selection of must-see works I put together through my own research and, since art is subjective, lets you add your own with location, photo and description.",
-        "links": ["vango-app.carrd.co", "Google Play"],
-        "shotAlts": ["Vango: home and map", "Vango: more screens"],
-        "role": ["Idea and business", "Product", "Artwork research and curation", "UX/UI design", "Backend: APIs and database", "Front end", "Deployment"],
-        "back": ["Python", "FastAPI", "SQLAlchemy", "Alembic", "PostgreSQL", "Docker", "PyJWT", "pytest", "Railway"],
-        "front": ["Flutter", "Dart", "Riverpod", "OpenStreetMap", "PostHog", "AdMob", "Codemagic"]
+        "links": [
+          "vango-app.carrd.co",
+          "Google Play"
+        ],
+        "shotAlts": [
+          "Vango: home and map",
+          "Vango: more screens"
+        ],
+        "role": [
+          "Idea and business",
+          "Product",
+          "Artwork research and curation",
+          "UX/UI design",
+          "Backend: APIs and database",
+          "Front end",
+          "Deployment"
+        ],
+        "back": [
+          "Python",
+          "FastAPI",
+          "SQLAlchemy",
+          "Alembic",
+          "PostgreSQL",
+          "Docker",
+          "PyJWT",
+          "pytest",
+          "Railway"
+        ],
+        "front": [
+          "Flutter",
+          "Dart",
+          "Riverpod",
+          "OpenStreetMap",
+          "PostHog",
+          "AdMob",
+          "Codemagic"
+        ]
       }
     }
   },
@@ -281,13 +484,20 @@
     "intro": "Study and curiosity projects: they're not in production, but they show how I approach a problem with data.",
     "listLabel": "Pick a project",
     "bizTitle": "The business story · what decision does it support?",
-    "blockKeys": ["the problem", "the data", "what I did", "the result"],
+    "blockKeys": [
+      "the problem",
+      "the data",
+      "what I did",
+      "the result"
+    ],
     "items": [
       {
         "name": "Neural networks for stocks",
         "sub": "Master's thesis · Inditex · GRU vs LSTM",
         "tag": "Master's thesis · UNED",
-        "links": ["Read the thesis (PDF, Spanish)"],
+        "links": [
+          "Read the thesis (PDF, Spanish)"
+        ],
         "figAlt": "Actual versus predicted price from the best model (GRU)",
         "blocks": [
           "Which neural network architecture best predicts the adjusted closing price of an IBEX 35 stock?",
@@ -301,7 +511,9 @@
         "name": "Hidden football gems",
         "sub": "Vector similarity · FIFA",
         "tag": "Personal project · LinkedIn",
-        "links": ["See the post"],
+        "links": [
+          "See the post"
+        ],
         "figAlt": "Table: Real Madrid starting eleven and the most similar replacement for each player, with value and age",
         "blocks": [
           "Can Real Madrid's 23/24 Champions League starting eleven be replicated with players any club could afford?",
@@ -315,7 +527,10 @@
         "name": "Júcar river floods",
         "sub": "Forecasting · hydrological data",
         "tag": "Personal project · LinkedIn",
-        "links": ["Post: the data", "Post: derivatives"],
+        "links": [
+          "Post: the data",
+          "Post: derivatives"
+        ],
         "figAlt": "Flow of the Rambla del Poyo on 29 October 2024 versus the 150 m³/s warning threshold",
         "blocks": [
           "After the DANA storm of 29 October 2024 in Valencia: what did the flow data for the Rambla del Poyo say, and could the flood have been anticipated?",
@@ -333,15 +548,113 @@
     "intro": "The technologies and tools I work with, grouped by what they're for.",
     "sectionLabel": "Tech stack",
     "groups": [
-      { "title": "Generative AI and ML", "items": ["LLMs", "Prompt engineering", "RAG", "Embeddings", "Vector databases", "NLP", "OpenAI", "Amazon Bedrock", "Claude", "ElevenLabs", "Ollama", "scikit-learn"] },
-      { "title": "Languages", "items": ["Python", "SQL", "R", "Matlab", "HTML"] },
-      { "title": "Backend and APIs", "items": ["FastAPI", "Flask", "REST APIs", "Microservices", "Pydantic", "SQLAlchemy", "Alembic", "Stripe"] },
-      { "title": "Cloud and DevOps", "items": ["AWS: Lambda · EC2 · ECS · S3 · Canaries", "Azure: Functions · Cosmos DB · OpenAI", "Docker", "Terraform", "CI/CD", "MLOps", "Linux", "Render", "Railway", "Vercel"] },
-      { "title": "Databases and observability", "items": ["PostgreSQL", "Supabase", "DynamoDB", "Cosmos DB", "Neo4j", "MariaDB / MySQL", "Sentry"] },
-      { "title": "Data and analytics", "items": ["pandas", "NumPy", "ETL", "Clustering", "Time series", "Matplotlib"] },
-      { "title": "Front end and mobile", "note": "with vibe coding, from my own designs", "items": ["React Native", "Expo", "Next.js", "Tailwind CSS", "Flutter", "TypeScript"] },
-      { "title": "Ways of working", "items": ["Agile", "Jira", "Git / GitHub", "AI-assisted development"] },
-      { "title": "Languages spoken", "items": ["Spanish (native)", "Valencian (native)", "English (professional)"] }
+      {
+        "title": "Generative AI and ML",
+        "items": [
+          "LLMs",
+          "Prompt engineering",
+          "RAG",
+          "Embeddings",
+          "Vector databases",
+          "NLP",
+          "OpenAI",
+          "Amazon Bedrock",
+          "Claude",
+          "ElevenLabs",
+          "Ollama",
+          "scikit-learn"
+        ]
+      },
+      {
+        "title": "Languages",
+        "items": [
+          "Python",
+          "SQL",
+          "R",
+          "Matlab",
+          "HTML"
+        ]
+      },
+      {
+        "title": "Backend and APIs",
+        "items": [
+          "FastAPI",
+          "Flask",
+          "REST APIs",
+          "Microservices",
+          "Pydantic",
+          "SQLAlchemy",
+          "Alembic",
+          "Stripe"
+        ]
+      },
+      {
+        "title": "Cloud and DevOps",
+        "items": [
+          "AWS: Lambda · EC2 · ECS · S3 · Canaries",
+          "Azure: Functions · Cosmos DB · OpenAI",
+          "Docker",
+          "Terraform",
+          "CI/CD",
+          "MLOps",
+          "Linux",
+          "Render",
+          "Railway",
+          "Vercel"
+        ]
+      },
+      {
+        "title": "Databases and observability",
+        "items": [
+          "PostgreSQL",
+          "Supabase",
+          "DynamoDB",
+          "Cosmos DB",
+          "Neo4j",
+          "MariaDB / MySQL",
+          "Sentry"
+        ]
+      },
+      {
+        "title": "Data and analytics",
+        "items": [
+          "pandas",
+          "NumPy",
+          "ETL",
+          "Clustering",
+          "Time series",
+          "Matplotlib"
+        ]
+      },
+      {
+        "title": "Front end and mobile",
+        "note": "with vibe coding, from my own designs",
+        "items": [
+          "React Native",
+          "Expo",
+          "Next.js",
+          "Tailwind CSS",
+          "Flutter",
+          "TypeScript"
+        ]
+      },
+      {
+        "title": "Ways of working",
+        "items": [
+          "Agile",
+          "Jira",
+          "Git / GitHub",
+          "AI-assisted development"
+        ]
+      },
+      {
+        "title": "Languages spoken",
+        "items": [
+          "Spanish (native)",
+          "Valencian (native)",
+          "English (professional)"
+        ]
+      }
     ]
   },
   "education": {
@@ -350,18 +663,57 @@
     "intro": "Data science as the foundation, machine learning as the specialism, and ongoing training in cloud and generative AI.",
     "certsTitle": "Licences and certifications",
     "degrees": [
-      { "date": "Sept 2024", "title": "Master's in Machine Learning", "school": "UNED", "note": "Thesis: artificial neural networks to predict stock prices.", "seal": "UNED" },
-      { "date": "Jun 2023", "title": "Bachelor's in Data Science", "school": "Universitat Politècnica de València", "note": "Final project: an app to monitor stock market trades.", "seal": "UPV" },
-      { "date": "Jan 2023", "title": "Bachelor's in Data Science", "school": "Technical University of Denmark (DTU)", "note": "Exchange semester in Denmark.", "seal": "DTU" }
+      {
+        "date": "Sept 2024",
+        "title": "Master's in Machine Learning",
+        "school": "UNED",
+        "note": "Thesis: artificial neural networks to predict stock prices.",
+        "seal": "UNED"
+      },
+      {
+        "date": "Jun 2023",
+        "title": "Bachelor's in Data Science",
+        "school": "Universitat Politècnica de València",
+        "note": "Final project: an app to monitor stock market trades.",
+        "seal": "UPV"
+      },
+      {
+        "date": "Jan 2023",
+        "title": "Bachelor's in Data Science",
+        "school": "Technical University of Denmark (DTU)",
+        "note": "Exchange semester in Denmark.",
+        "seal": "DTU"
+      }
     ],
     "certs": [
-      { "name": "Sales and Marketing Badge Course", "org": "Santa Clara University · MOBI" },
-      { "name": "Artificial Intelligence and LLMs: Operation, Key Components and Applications", "org": "Universidad de Zaragoza" },
-      { "name": "AWS Cloud Technical Essentials", "org": "Amazon Web Services" },
-      { "name": "ChatGPT Prompt Engineering for Developers & Building Systems with the ChatGPT API", "org": "DeepLearning.AI" },
-      { "name": "Introduction to Microsoft Azure Cloud Services", "org": "Microsoft" },
-      { "name": "First Certificate in English", "org": "University of Cambridge" },
-      { "name": "Introduction to stock market investment", "org": "edX" }
+      {
+        "name": "Sales and Marketing Badge Course",
+        "org": "Santa Clara University · MOBI"
+      },
+      {
+        "name": "Artificial Intelligence and LLMs: Operation, Key Components and Applications",
+        "org": "Universidad de Zaragoza"
+      },
+      {
+        "name": "AWS Cloud Technical Essentials",
+        "org": "Amazon Web Services"
+      },
+      {
+        "name": "ChatGPT Prompt Engineering for Developers & Building Systems with the ChatGPT API",
+        "org": "DeepLearning.AI"
+      },
+      {
+        "name": "Introduction to Microsoft Azure Cloud Services",
+        "org": "Microsoft"
+      },
+      {
+        "name": "First Certificate in English",
+        "org": "University of Cambridge"
+      },
+      {
+        "name": "Introduction to stock market investment",
+        "org": "edX"
+      }
     ]
   },
   "contact": {

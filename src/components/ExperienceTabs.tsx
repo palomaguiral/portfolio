@@ -14,7 +14,7 @@ export default function ExperienceTabs({ t }: Props) {
 
   return (
     <section className="flex min-w-0 flex-col justify-center lg:flex-[1_1_760px]">
-      <div role="tablist" aria-label={t.tablistLabel} className="scrollbar-none flex items-end gap-1.5 overflow-x-auto pt-2 pl-2.5">
+      <div role="tablist" aria-label={t.tablistLabel} className="flex items-end gap-1 pt-2 sm:gap-1.5 sm:pl-2.5">
         {t.jobs.map((j, i) => {
           const sel = i === on;
           return (
@@ -29,12 +29,12 @@ export default function ExperienceTabs({ t }: Props) {
               onClick={() => setOn(i)}
               onMouseEnter={() => setOn(i)}
               onKeyDown={(e) => onKeyDown(e, i)}
-              className={`shrink-0 cursor-pointer rounded-t-2xl border-0 px-5 pb-4 text-left transition-transform duration-300 ease-soft hover:-translate-y-2 sm:min-w-[190px] sm:px-[26px] ${
+              className={`min-w-0 flex-1 cursor-pointer rounded-t-2xl border-0 px-2.5 pb-3.5 text-left sm:flex-none sm:pb-4 transition-transform duration-300 ease-soft hover:-translate-y-2 sm:min-w-[190px] sm:px-[26px] ${
                 sel ? "bg-cream pt-[18px] text-ink" : "bg-deep pt-3.5 text-cream"
               }`}
             >
-              <span className="block font-serif text-xl leading-[1.05] font-semibold sm:text-2xl">{j.co}</span>
-              <span className="mt-1 block text-[13px] opacity-85">{j.dates}</span>
+              <span className="block font-serif text-[15px] leading-[1.1] font-semibold sm:text-2xl">{j.co}</span>
+              <span className="mt-1 block text-[11px] leading-tight opacity-85 sm:text-[13px]">{j.dates}</span>
             </button>
           );
         })}

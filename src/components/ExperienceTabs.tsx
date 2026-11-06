@@ -13,7 +13,7 @@ export default function ExperienceTabs({ t }: Props) {
   const c = t.jobs[on];
 
   return (
-    <section className="flex min-w-0 flex-col justify-center lg:flex-[1_1_760px] lg:pb-[30px]">
+    <section className="flex min-w-0 flex-col justify-center lg:flex-[1_1_760px]">
       <div role="tablist" aria-label={t.tablistLabel} className="scrollbar-none flex items-end gap-1.5 overflow-x-auto pt-2 pl-2.5">
         {t.jobs.map((j, i) => {
           const sel = i === on;

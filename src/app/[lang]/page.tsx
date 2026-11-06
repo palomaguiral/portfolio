@@ -103,16 +103,16 @@ export default async function HomePage({ params }: PageProps<"/[lang]">) {
       <HomeAreas areas={t.areas} label={t.areasLabel} note={t.areasNote} contributes={t.contributes} />
 
       <footer className="flex flex-wrap items-center gap-x-[26px] gap-y-2.5 border-t border-cream/25 pt-3.5 text-sm lg:absolute lg:right-10 lg:bottom-[22px] lg:left-10">
-        <a href={`mailto:${contact.email}`} className="text-cream no-underline hover:text-white">
+        <a href={`mailto:${contact.email}`} className="inline-flex min-h-6 items-center text-cream no-underline hover:text-white">
           {contact.email}
         </a>
-        <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="text-cream no-underline hover:text-white">
+        <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-6 items-center text-cream no-underline hover:text-white">
           LinkedIn <span aria-hidden="true">↗</span>
         </a>
-        <a href={contact.github} target="_blank" rel="noopener noreferrer" className="text-cream no-underline hover:text-white">
+        <a href={contact.github} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-6 items-center text-cream no-underline hover:text-white">
           GitHub <span aria-hidden="true">↗</span>
         </a>
-        <a href={contact.cv} download className="text-cream no-underline hover:text-white">
+        <a href={contact.cv} download className="inline-flex min-h-6 items-center text-cream no-underline hover:text-white">
           {dict.common.downloadCv} <span aria-hidden="true">↓</span>
         </a>
         <span className="text-tabtext sm:ml-auto">

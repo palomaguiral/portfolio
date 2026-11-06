@@ -28,13 +28,13 @@ export default function LanguageSwitch({ current, label, names }: Props) {
             hrefLang={l}
             lang={l}
             aria-current={active ? "true" : undefined}
-            aria-label={names[l]}
             scroll={false}
             className={`flex min-h-9 items-center rounded-full px-[13px] py-2 text-sm font-semibold uppercase no-underline transition-colors ${
               active ? "bg-cream text-outer" : "text-cream hover:bg-cream/15"
             }`}
           >
-            {l}
+            <span aria-hidden="true">{l}</span>
+            <span className="sr-only">{names[l]}</span>
           </Link>
         );
       })}

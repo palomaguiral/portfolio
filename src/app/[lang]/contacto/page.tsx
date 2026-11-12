@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import { notFound } from "next/navigation";
 import PageShell from "@/components/PageShell";
 import CopyEmail from "@/components/CopyEmail";
@@ -61,13 +62,12 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
               {dict.common.downloadCv} <span aria-hidden="true">↓</span>
             </span>
           </a>
-          <div className="flex flex-wrap gap-x-[30px] gap-y-2 px-3.5 pt-[22px] text-[15px]">
+          <div className="flex flex-wrap items-center gap-x-3 gap-y-2 px-3.5 pt-[22px] text-[15px]">
+            <Image src="/edu/globe.png" alt="" width={30} height={25} className="h-[25px] w-auto" />
             <span>
               <span className="font-hand text-[22px]">{t.locationLabel}</span> {dict.common.location}
             </span>
-            <span>
-              <span className="font-hand text-[22px]">{t.languagesLabel}</span> {t.languages}
-            </span>
+            <span className="rounded-full border border-cream/60 px-3 py-0.5 text-[13px] font-medium">{t.relocation}</span>
           </div>
         </section>
       </div>

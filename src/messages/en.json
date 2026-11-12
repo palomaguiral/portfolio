@@ -645,15 +645,8 @@
           "Jira",
           "Git / GitHub",
           "AI-assisted development"
-        ]
-      },
-      {
-        "title": "Languages spoken",
-        "items": [
-          "Spanish (native)",
-          "Valencian (native)",
-          "English (professional)"
-        ]
+        ],
+        "soft": true
       }
     ]
   },

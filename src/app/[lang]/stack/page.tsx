@@ -28,7 +28,7 @@ export default async function StackPage({ params }: PageProps<"/[lang]/stack">) 
         {t.groups.map((g, i) => (
           <article
             key={g.title}
-            className="animate-rise rounded-[18px] bg-cream px-5 py-[18px] text-ink transition-[transform,box-shadow] duration-300 ease-soft hover:-translate-y-1.5 hover:shadow-[0_26px_44px_rgba(30,2,4,0.4)]"
+            className={`animate-rise rounded-[18px] ${"soft" in g && g.soft ? "bg-rose" : "bg-cream"} px-5 py-[18px] text-ink transition-[transform,box-shadow] duration-300 ease-soft hover:-translate-y-1.5 hover:shadow-[0_26px_44px_rgba(30,2,4,0.4)]`}
             style={{ animationDelay: `${i * 0.04}s` }}
           >
             <h2 className="m-0 mb-3 font-serif text-[22px] leading-[1.1] font-semibold">{g.title}</h2>

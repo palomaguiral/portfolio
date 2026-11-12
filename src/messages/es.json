@@ -645,15 +645,8 @@
           "Jira",
           "Git / GitHub",
           "Desarrollo asistido por IA"
-        ]
-      },
-      {
-        "title": "Idiomas",
-        "items": [
-          "Español (nativa)",
-          "Valenciano (nativa)",
-          "Inglés (profesional)"
-        ]
+        ],
+        "soft": true
       }
     ]
   },

@@ -34,7 +34,10 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
 
         <section className="min-w-0 animate-rise lg:flex-[0_1_680px]">
           <div className="flex flex-wrap items-baseline justify-between gap-x-4 gap-y-2 border-y border-cream/35 px-3.5 py-[18px]">
-            <span className={rowLabel}>{t.email}</span>
+            <span className={`${rowLabel} inline-flex items-center gap-2.5 self-center`}>
+              <Image src="/contact/gmail.png" alt="" width={85} height={64} className="h-[22px] w-auto" />
+              {t.email}
+            </span>
             <span className="flex flex-wrap items-baseline gap-3">
               <a href={`mailto:${contact.email}`} className="font-serif text-xl font-semibold text-cream no-underline hover:text-white sm:text-2xl">
                 {contact.email}
@@ -43,14 +46,20 @@ export default async function ContactPage({ params }: PageProps<"/[lang]/contact
             </span>
           </div>
           <a href={contact.linkedin} target="_blank" rel="noopener noreferrer" className={row}>
-            <span className={rowLabel}>{t.linkedin}</span>
+            <span className={`${rowLabel} inline-flex items-center gap-2.5 self-center`}>
+              <Image src="/contact/linkedin.png" alt="" width={64} height={64} className="h-[22px] w-auto" />
+              {t.linkedin}
+            </span>
             <span className={big}>
               {contact.linkedinHandle} <span aria-hidden="true">↗</span>
             </span>
             <span className="sr-only">{dict.common.newTab}</span>
           </a>
           <a href={contact.github} target="_blank" rel="noopener noreferrer" className={row}>
-            <span className={rowLabel}>{t.github}</span>
+            <span className={`${rowLabel} inline-flex items-center gap-2.5 self-center`}>
+              <Image src="/contact/github.png" alt="" width={66} height={64} className="h-[22px] w-auto" />
+              {t.github}
+            </span>
             <span className={big}>
               {contact.githubHandle} <span aria-hidden="true">↗</span>
             </span>

@@ -655,29 +655,26 @@
     "title": "Education",
     "intro": "Data science as the foundation, machine learning as the specialism, and ongoing training in cloud and generative AI.",
     "certsTitle": "Licences and certifications",
+    "degreesTitle": "Degrees",
     "degrees": [
       {
         "date": "Sept 2024",
         "title": "Master's in Machine Learning",
         "school": "UNED",
-        "note": "Thesis: artificial neural networks to predict stock prices.",
-        "seal": "UNED"
+        "note": "Thesis: artificial neural networks to predict stock prices."
       },
       {
         "date": "Jun 2023",
         "title": "Bachelor's in Data Science",
-        "school": "Universitat Politècnica de València",
-        "note": "Final project: an app to monitor stock market trades.",
-        "seal": "UPV"
-      },
-      {
-        "date": "Jan 2023",
-        "title": "Bachelor's in Data Science",
-        "school": "Technical University of Denmark (DTU)",
-        "note": "Exchange semester in Denmark.",
-        "seal": "DTU"
+        "school": "Universitat Politècnica de València · Technical University of Denmark (DTU)",
+        "note": "Final project: an app to monitor stock market trades. Includes an exchange semester at DTU (Denmark)."
       }
     ],
+    "exchangeMap": {
+      "from": "Valencia",
+      "to": "Copenhagen",
+      "label": "Map of Europe marking Valencia (UPV) and Copenhagen (DTU, exchange semester)"
+    },
     "certs": [
       {
         "name": "Sales and Marketing Badge Course",
@@ -706,6 +703,21 @@
       {
         "name": "Introduction to stock market investment",
         "org": "edX"
+      }
+    ],
+    "languagesTitle": "Languages",
+    "languages": [
+      {
+        "name": "Spanish",
+        "level": "Native"
+      },
+      {
+        "name": "Valencian",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Professional"
       }
     ]
   },

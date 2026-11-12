@@ -655,29 +655,26 @@
     "title": "Educación",
     "intro": "Ciencia de datos como base, machine learning como especialidad y formación continua en cloud e IA generativa.",
     "certsTitle": "Licencias y certificaciones",
+    "degreesTitle": "Títulos oficiales",
     "degrees": [
       {
         "date": "Sept 2024",
         "title": "Máster en Machine Learning",
         "school": "UNED",
-        "note": "TFM: redes neuronales artificiales para predecir precios bursátiles.",
-        "seal": "UNED"
+        "note": "TFM: redes neuronales artificiales para predecir precios bursátiles."
       },
       {
         "date": "Jun 2023",
         "title": "Grado en Ciencia de Datos",
-        "school": "Universitat Politècnica de València",
-        "note": "TFG: aplicación para monitorizar operaciones en bolsa.",
-        "seal": "UPV"
-      },
-      {
-        "date": "Ene 2023",
-        "title": "Grado en Ciencia de Datos",
-        "school": "Technical University of Denmark (DTU)",
-        "note": "Estancia de intercambio en Dinamarca.",
-        "seal": "DTU"
+        "school": "Universitat Politècnica de València · Technical University of Denmark (DTU)",
+        "note": "TFG: aplicación para monitorizar operaciones en bolsa. Con un semestre de intercambio en la DTU (Dinamarca)."
       }
     ],
+    "exchangeMap": {
+      "from": "Valencia",
+      "to": "Copenhague",
+      "label": "Mapa de Europa con Valencia (UPV) y Copenhague (DTU, semestre de intercambio) marcadas"
+    },
     "certs": [
       {
         "name": "Sales and Marketing Badge Course",
@@ -706,6 +703,21 @@
       {
         "name": "Introduction to stock market investment",
         "org": "edX"
+      }
+    ],
+    "languagesTitle": "Idiomas",
+    "languages": [
+      {
+        "name": "Español",
+        "level": "Nativo"
+      },
+      {
+        "name": "Valenciano",
+        "level": "Nativo"
+      },
+      {
+        "name": "Inglés",
+        "level": "Profesional"
       }
     ]
   },

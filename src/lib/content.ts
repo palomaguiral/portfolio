@@ -63,3 +63,17 @@ export const analyses = [
 ];
 
 export const degreeRotations = [-2, 1.5, -1];
+
+// University seals shown on each degree card (same order as education.degrees).
+// `id` matches the data-seal hook ExchangeArrows uses to draw the seal → city arrows.
+export type DegreeSeal = { id: string; src: string; alt: string; corner: "top" | "bottom" };
+export const degreeSeals: DegreeSeal[][] = [
+  [{ id: "uned", src: "/edu/uned.png", alt: "UNED", corner: "bottom" }],
+  [
+    { id: "upv", src: "/edu/upv.png", alt: "Universitat Politècnica de València", corner: "bottom" },
+    { id: "dtu", src: "/edu/dtu.png", alt: "Technical University of Denmark", corner: "top" },
+  ],
+];
+
+// Icons next to each section heading on the education page.
+export const educationIcons = { degrees: "/edu/cap.png", certs: "/edu/badge.png", languages: "/edu/chat.png" } as const;

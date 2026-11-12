@@ -77,3 +77,10 @@ export const degreeSeals: DegreeSeal[][] = [
 
 // Icons next to each section heading on the education page.
 export const educationIcons = { degrees: "/edu/cap.png", certs: "/edu/badge.png", languages: "/edu/chat.png" } as const;
+
+// Flags next to each language on the education page (same order as education.languages).
+export const languageFlags = [
+  { src: "/flags/es.png", w: 72 },
+  { src: "/flags/va.png", w: 72 },
+  { src: "/flags/en.png", w: 91 },
+] as const;

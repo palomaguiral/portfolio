@@ -6,7 +6,7 @@ import PageShell from "@/components/PageShell";
 import { PageIntro } from "@/components/ui";
 import { getDictionary, hasLocale } from "@/lib/i18n";
 import { buildMetadata } from "@/lib/metadata";
-import { degreeRotations, degreeSeals, educationIcons } from "@/lib/content";
+import { degreeRotations, degreeSeals, educationIcons, languageFlags } from "@/lib/content";
 import ExchangeMap from "@/components/ExchangeMap";
 import ExchangeArrows from "@/components/ExchangeArrows";
 
@@ -101,8 +101,17 @@ export default async function EducationPage({ params }: PageProps<"/[lang]/educa
         <div className="animate-rise flex flex-wrap items-center gap-x-10 gap-y-2 border-t border-cream/30 pt-3.5" style={{ animationDelay: "0.32s" }}>
           <SectionTitle icon={educationIcons.languages}>{t.languagesTitle}</SectionTitle>
           <ul className="m-0 flex list-none flex-wrap gap-x-10 gap-y-1 p-0">
-            {t.languages.map((l) => (
-              <li key={l.name} className="text-base font-medium">
+            {t.languages.map((l, i) => (
+              <li key={l.name} className="flex items-center gap-2 text-base font-medium">
+                {languageFlags[i] ? (
+                  <Image
+                    src={languageFlags[i].src}
+                    alt=""
+                    width={languageFlags[i].w}
+                    height={48}
+                    className="h-4 w-auto rounded-[2px] shadow-[0_0_0_1px_rgba(244,231,215,0.35)]"
+                  />
+                ) : null}
                 {l.name} <span className="text-sm font-normal text-tabtext">· {l.level}</span>
               </li>
             ))}
